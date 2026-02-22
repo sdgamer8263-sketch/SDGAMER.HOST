@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # ==========================================
-# SDGAMER MULTI-TOOL (BLOCKY EDITION)
-# STYLE: INSPIRED BY CODING HUB
+# SDGAMER MULTI-TOOL (CODING HUB STYLE)
+# STYLE: 3D SHADOW BLOCKY
 # ==========================================
 
-# Color Palette
+# Colors
 R='\033[1;31m'
 G='\033[1;32m'
 Y='\033[1;33m'
@@ -15,31 +15,31 @@ C='\033[1;36m'
 W='\033[1;37m'
 NC='\033[0m'
 
-# Function for 3D Blocky Colorful Banner
+# Function for 3D Blocky Banner (Coding Hub Style)
 banner() {
     clear
-    echo -e "${C}╭──────────────────────────────────────────────────────────╮${NC}"
-    echo -e " ${R}  ____  ${G}____    ${Y}____   ${B}  _    ${P} __  __ ${C} _____ ${W} ____   "
-    echo -e " ${R} / ___| ${G}|  _ \  ${Y}/ ___|  ${B} / \   ${P}|  \/  |${C}| ____|${W}|  _ \  "
-    echo -e " ${R} \___ \ ${G}| | | | ${Y}|  _   ${B} / _ \  ${P}| |\/| |${C}|  _|  ${W}| |_) | "
-    echo -e " ${R}  ___) |${G}| |_| | ${Y}| |_| | ${B}/ ___ \ ${P}| |  | |${C}| |___ ${W}|  _ <  "
-    echo -e " ${R} |____/ ${G}|____/  ${Y}\____/ ${B}/_/   \_\ ${P}|_|  |_|${C}|_____|${W}|_| \_\ "
-    echo -e "${C}╰──────────────────────────────────────────────────────────╯${NC}"
-    echo -e "  ${G}HOST: SD-Server${NC}  ${W}│${NC}  ${Y}STATUS: Active${NC}  ${W}│${NC}  ${B}NET: Connected${NC}"
+    echo -e "${C} ▬▬▬ ${W}HOST: ${C}sdgamer8263-sketch ${W}│ ${C}4 days, 22 hours ${W}│ ${C}CPU: 15% ${C}▬▬▬${NC}"
+    echo -e "${B}  ██████  ██████   ██████   █████  ███    ███ ███████ ██████  ${NC}"
+    echo -e "${P} ██      ██   ██ ██       ██   ██ ████  ████ ██      ██   ██ ${NC}"
+    echo -e "${C}  █████  ██   ██ ██   ███ ███████ ██ ████ ██ █████   ██████  ${NC}"
+    echo -e "${G}      ██ ██   ██ ██    ██ ██   ██ ██  ██  ██ ██      ██   ██ ${NC}"
+    echo -e "${Y} ██████  ██████   ██████  ██   ██ ██      ██ ███████ ██   ██ ${NC}"
+    echo -e "${W} ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬${NC}"
+    echo -e " ${G}● ${W}System Health: ${G}CONNECTED ${W}│ ${Y}RAM: 5% ${W}│ ${B}NET: STABLE${NC}"
     echo ""
 }
 
-# Playit.GG Banner
+# Playit.GG Banner Style
 playit_banner() {
     clear
     echo -e "${G}╔══════════════════════════════════════════════════════════╗${NC}"
-    echo -e " ${C}  ____  _        _ __   ___ _____     ____  ____   ${NC}"
-    echo -e " ${C} |  _ \| |      / \\ \ / /_ _|_   _|   / ___|/ ___|  ${NC}"
-    echo -e " ${C} | |_) | |     / _ \\ \ / / | |  | |    | |  _| |  _   ${NC}"
-    echo -e " ${C} |  __/| |___ / ___ \ | |  | |  | |    | |_| | |_| |  ${NC}"
-    echo -e " ${C} |_|   |_____/_/   \_\_| |___| |_|     \____|\____|  ${NC}"
+    echo -e "${C}   ██████  ██       █████  ██    ██ ██ ████████ ${NC}"
+    echo -e "${C}   ██   ██ ██      ██   ██  ██  ██  ██    ██    ${NC}"
+    echo -e "${C}   ██████  ██      ███████   ████   ██    ██    ${NC}"
+    echo -e "${C}   ██      ██      ██   ██    ██    ██    ██    ${NC}"
+    echo -e "${C}   ██      ███████ ██   ██    ██    ██    ██    ${NC}"
     echo -e "${G}╚══════════════════════════════════════════════════════════╝${NC}"
-    echo -e "             ${Y}⚡ PLAYIT.GG PORT FORWARDING ⚡${NC}"
+    echo -e "             ${Y}⚡ PORT FORWARDING DASHBOARD ⚡${NC}"
     echo ""
 }
 
@@ -47,15 +47,15 @@ playit_banner() {
 playit_menu() {
     while true; do
         playit_banner
-        echo -e "    ${W}» ${G}[A]${W} Install + Setup Playit"
-        echo -e "    ${W}» ${G}[B]${W} Status Check"
-        echo -e "    ${W}» ${R}[C]${W} Back to Menu"
+        echo -e "    ${C}➥${W} [A] Install + Setup Playit"
+        echo -e "    ${C}➥${W} [B] Status Check"
+        echo -e "    ${C}➥${W} [C] Return to Main Menu"
         echo ""
-        echo -en "${C} ➥ Input: ${NC}"
+        echo -en "${G} ⚡ Input Choice: ${NC}"
         read -r subopt
         case $subopt in
-            [Aa]) bash <(curl -s https://raw.githubusercontent.com/JishnuTheGamer/Vps/refs/heads/main/playit-ins); echo -e "\n${G}Done!${NC}"; read -r ;;
-            [Bb]) playit; echo -e "\n${R}Back? Press Enter...${NC}"; read -r ;;
+            [Aa]) bash <(curl -s https://raw.githubusercontent.com/JishnuTheGamer/Vps/refs/heads/main/playit-ins); echo -e "\n${G}Success!${NC}"; read -r ;;
+            [Bb]) playit; echo -e "\n${R}Press Enter to return...${NC}"; read -r ;;
             [Cc]) break ;;
             *) echo -e "${R}Invalid!${NC}"; sleep 1 ;;
         esac
@@ -65,16 +65,16 @@ playit_menu() {
 # Main Application Loop
 while true; do
     banner
-    echo -e " ${B}🚀 DEPLOYMENT SERVICES${NC}"
-    echo -e " ${C}──────────────────────────────────────────${NC}"
-    echo -e "  ${G}[1]${W} Setup VPS                ${G}[5]${W} Theme Configurator"
-    echo -e "  ${G}[2]${W} Pterodactyl Panel        ${G}[6]${W} System Tools (No KVM)"
-    echo -e "  ${G}[3]${W} Wings Setup              ${G}[7]${W} Playit.GG Forwarding"
-    echo -e "  ${G}[4]${W} Tooler Script            ${G}[8]${W} 24/7 Python Code"
-    echo -e "  ${R}[9]${W} Exit Script"
-    echo -e " ${C}──────────────────────────────────────────${NC}"
+    echo -e " ${B}▩ DEPLOYMENT SERVICES${NC}"
+    echo -e " ${C}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+    echo -e "      ${G}[1]${W} Setup VPS AND Environment        ${G}[5]${W} Theme Configurator"
+    echo -e "      ${G}[2]${W} Pterodactyl Panel                ${G}[6]${W} System Optimizer"
+    echo -e "      ${G}[3]${W} Wings Setup                      ${G}[7]${W} Playit.GG Forwarding"
+    echo -e "      ${G}[4]${W} Tooler Script                    ${G}[8]${W} 24/7 Python Code"
+    echo -e "                            ${R}[9]${W} EXIT SCRIPT"
+    echo -e " ${C}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo ""
-    echo -en "${Y} ⚡ Select Service: ${NC}"
+    echo -en "${Y} ⚡ Select Option: ${NC}"
     read -r mainopt
 
     case $mainopt in
@@ -86,11 +86,11 @@ while true; do
         6|06) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/ee/main/run.sh) ;;
         7|07) playit_menu; continue ;;
         8|08) python3 <(curl -s https://raw.githubusercontent.com/JishnuTheGamer/24-7/refs/heads/main/24) ;;
-        9|09) echo -e "\n${Y}Goodbye!${NC}"; exit 0 ;;
-        *) echo -e "${R}Invalid!${NC}"; sleep 1 ;;
+        9|09) echo -e "\n${Y}Closing SDGAMER Tool...${NC}"; exit 0 ;;
+        *) echo -e "${R}Wrong choice!${NC}"; sleep 1 ;;
     esac
 
-    echo -e "\n${G}✔ Operation Finished!${NC}"
-    echo -en "${W}Press ${Y}[ENTER]${W} to return...${NC}"
+    echo -e "\n${G}✔ Process Completed!${NC}"
+    echo -en "${W}Press ${Y}[ENTER]${W} to return home...${NC}"
     read -r
 done
