@@ -18,7 +18,7 @@ NC='\033[0m'
 # Function for 3D Blocky Banner (Coding Hub Style)
 banner() {
     clear
-    echo -e "${C} ▬▬▬ ${W}HOST: ${C}sdgamer8263-sketch ${W}│ ${C}4 days, 22 hours ${W}│ ${C}CPU: 15% ${C}▬▬▬${NC}"
+    echo -e "${C} ▬▬▬ ${W}HOST: ${C}SDGAMER  ${W}│ ${C}7 days, 22 hours ${W}│ ${C}CPU: 45% ${C}▬▬▬${NC}"
     echo -e "${B}  ██████  ██████   ██████   █████  ███    ███ ███████ ██████  ${NC}"
     echo -e "${P} ██      ██   ██ ██       ██   ██ ████  ████ ██      ██   ██ ${NC}"
     echo -e "${C}  █████  ██   ██ ██   ███ ███████ ██ ████ ██ █████   ██████  ${NC}"
