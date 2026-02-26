@@ -68,7 +68,7 @@ while true; do
     echo -e " ${B}▩ DEPLOYMENT SERVICES${NC}"
     echo -e " ${C}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo -e "      ${G}[1]${W} Setup VPS AND Environment        ${G}[5]${W} Theme Configurator"
-    echo -e "      ${G}[2]${W} Pterodactyl Panel                ${G}[6]${W} System Optimizer"
+    echo -e "      ${G}[2]${W} Panels                           ${G}[6]${W} System Optimizer"
     echo -e "      ${G}[3]${W} Wings Setup                      ${G}[7]${W} Playit.GG Forwarding"
     echo -e "      ${G}[4]${W} Tooler Script                    ${G}[8]${W} 24/7 Python Code"
     echo -e "                            ${R}[9]${W} EXIT SCRIPT"
