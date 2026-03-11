@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==========================================
-# SDGAMER MULTI-TOOL (CODING HUB STYLE)
+# SDGAMER MULTI-TOOL 
 # STYLE: 3D SHADOW BLOCKY
 # ==========================================
 
@@ -53,8 +53,8 @@ playit_menu() {
         echo ""
         echo -en "${G} ⚡ Input Choice: ${NC}"
         read -r subopt
-        case $subopt in
-            [Aa]) bash <(curl -s https://raw.githubusercontent.com/JishnuTheGamer/Vps/refs/heads/main/playit-ins); echo -e "\n${G}Success!${NC}"; read -r ;;
+        case "$subopt" in
+            [Aa]) bash <(curl -sL https://raw.githubusercontent.com/JishnuTheGamer/Vps/refs/heads/main/playit-ins); echo -e "\n${G}Success!${NC}"; read -r ;;
             [Bb]) playit; echo -e "\n${R}Press Enter to return...${NC}"; read -r ;;
             [Cc]) break ;;
             *) echo -e "${R}Invalid!${NC}"; sleep 1 ;;
@@ -77,16 +77,16 @@ while true; do
     echo -en "${Y} ⚡ Select Option: ${NC}"
     read -r mainopt
 
-    case $mainopt in
-        1|01) bash <(curl -s https://raw.githubusercontent.com/sdgamer8263-sketch/VPS/main/Environment) ;;
+    case "$mainopt" in
+        1|01) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/VPS/main/Environment) ;;
         2|02) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/Panel/main/run.sh) ;;
         3|03) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/Wings-setup/main/run.sh) ;;
         4|04) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/tooler/main/run.sh) ;;
         5|05) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/Theme/main/run.sh) ;;
         6|06) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/ee/main/run.sh) ;;
         7|07) playit_menu; continue ;;
-        8|08) python3 <(curl -s https://raw.githubusercontent.com/JishnuTheGamer/24-7/refs/heads/main/24) ;;
-        9|09) bash <(curl -s https://raw.githubusercontent.com/sdgamer8263-sketch/SDGAMER.HOST/main/System.sh) ;;
+        8|08) python3 <(curl -sL https://raw.githubusercontent.com/JishnuTheGamer/24-7/refs/heads/main/24) ;;
+        9|09) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/SDGAMER.HOST/main/System.sh) ;;
         0|00) echo -e "\n${Y}Closing SDGAMER Tool...${NC}"; exit 0 ;;
         *) echo -e "${R}Wrong choice!${NC}"; sleep 1 ;;
     esac
@@ -95,3 +95,4 @@ while true; do
     echo -en "${W}Press ${Y}[ENTER]${W} to return home...${NC}"
     read -r
 done
+
