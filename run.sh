@@ -86,7 +86,7 @@ while true; do
         6|06) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/ee/main/run.sh) ;;
         7|07) playit_menu; continue ;;
         8|08) python3 <(curl -s https://raw.githubusercontent.com/JishnuTheGamer/24-7/refs/heads/main/24) ;;
-        9|09) bash <(curl -s https://raw.githubusercontent.com/sdgamer8263-sketch/SDGAMER.HOST/main/System.sh)
+        9|09) bash <(curl -s https://raw.githubusercontent.com/sdgamer8263-sketch/SDGAMER.HOST/main/System.sh) ;;
         0|00) echo -e "\n${Y}Closing SDGAMER Tool...${NC}"; exit 0 ;;
         *) echo -e "${R}Wrong choice!${NC}"; sleep 1 ;;
     esac
