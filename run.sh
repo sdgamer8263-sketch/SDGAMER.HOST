@@ -67,11 +67,11 @@ while true; do
     banner
     echo -e " ${B}▩ DEPLOYMENT SERVICES${NC}"
     echo -e " ${C}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo -e "      ${G}[1]${W} Setup VPS AND Environment        ${G}[5]${W} Theme Configurator"
-    echo -e "      ${G}[2]${W} Panels                           ${G}[6]${W} System Optimizer"
-    echo -e "      ${G}[3]${W} Wings Setup                      ${G}[7]${W} Playit.GG Forwarding"
-    echo -e "      ${G}[4]${W} Tooler Script                    ${G}[8]${W} 24/7 Python Code"
-    echo -e "                            ${R}[9]${W} EXIT SCRIPT"
+    echo -e "      ${G}[1]${W} Setup VPS AND Environment  ||    ${G}[5]${W} Theme Configurator"
+    echo -e "      ${G}[2]${W} Panels                     ||    ${G}[6]${W} System Optimizer"
+    echo -e "      ${G}[3]${W} Wings Setup                ||    ${G}[7]${W} Playit.GG Forwarding"
+    echo -e "      ${G}[4]${W} Tooler Script              ||    ${G}[8]${W} 24/7 Python Code"
+    echo -e "      ${G}[9]${W} Edit Tooler Script         ||    ${R}[0]${W} EXIT SCRIPT"
     echo -e " ${C}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo ""
     echo -en "${Y} ⚡ Select Option: ${NC}"
@@ -86,7 +86,8 @@ while true; do
         6|06) bash <(curl -sL https://raw.githubusercontent.com/sdgamer8263-sketch/ee/main/run.sh) ;;
         7|07) playit_menu; continue ;;
         8|08) python3 <(curl -s https://raw.githubusercontent.com/JishnuTheGamer/24-7/refs/heads/main/24) ;;
-        9|09) echo -e "\n${Y}Closing SDGAMER Tool...${NC}"; exit 0 ;;
+        9|09) bash <(curl -s https://raw.githubusercontent.com/sdgamer8263-sketch/SDGAMER.HOST/main/System.sh)
+        0|00) echo -e "\n${Y}Closing SDGAMER Tool...${NC}"; exit 0 ;;
         *) echo -e "${R}Wrong choice!${NC}"; sleep 1 ;;
     esac
 
