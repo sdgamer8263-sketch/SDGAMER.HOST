@@ -74,7 +74,7 @@ playit_menu() {
 # Main Application Loop
 while true; do
     banner
-    echo -e " ${B}▩ 🛠️ DEPLOYMENT SERVICES ▩${NC}"
+    echo -e " ${B}▩ 🛠️ DEPLOYMENT SERVICES (V26.1) ▩${NC}"
     echo -e " ${C}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo -e "      ${G}[1]${W} 🖥️ Setup VPS & Env       ||    ${G}[5]${W} 🎨 Theme Configurator"
     echo -e "      ${G}[2]${W} 🎛️ Install Panels        ||    ${G}[6]${W} 🧹 System Optimizer"
